@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+main{
+    padding: 0  40px;
+}
+
+.hero{
+    /* border: 1px solid red; */
+    background-image: url("./images/bro2.svg");
+    height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.signup_heading{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 30px;
+}
+
+.signup_input_form{
+     display: flex;
+     flex-direction: column;
+}
+
+.input_container{
+    position: relative;
+    padding-top: 40px ;
+}
+
+.input_container input{
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    width: 100%;
+    transform: rotate(0.17deg);
+}
+
+.input_container label{
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.input_container input:focus ~ label,
+.input_container input:valid ~ label{
+   top: 20px;
+}
+ 
+
+.agree_continue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1B8C3B;
+    border-radius: 10px;
+    width: 269px;
+    height: 43px;
+    margin: 70px auto 20px auto;
+}
+
+.agree_continue button{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.last_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.last_section p{
+    padding-left: 10px;
+}
+
+.last_section input[type="checkbox"]:checked{
+    background-color: #1B8C3B !important;
+}
+
+.last_section a{
+    text-decoration: none;
+    color: #1B8C3B;
+    padding-left: 5px;
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 500px) {
+
+    main{
+        padding: 0  15px;
+    }
+
+    .hero{
+        height: 350px;
+    }
+
+    .agree_continue{
+        width: 255px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .hero{
+        height: 300px;
+    }
+
+    .agree_continue{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main{
+        padding: 0  5px;
+    }
+}
+
+

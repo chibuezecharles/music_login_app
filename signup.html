@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>Sign up page</title>
+    <script src="./signup.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="hero"></div>
+        <div class="signup_heading">
+            <h2>Sign up</h2>
+        </div>
+
+        <form class="signup_input_form" >
+            <div class="input_container">
+                <input type="text" name="name" id="name" class="signup_name" required>
+                <label for="name">Name</label>
+            </div>
+
+            <div class="input_container">
+                <input type="email" name="email" id="email" class="signup_email" required>
+                <label for="email">E- mail</label>
+            </div>
+
+            <div class="input_container">
+                <input type="password" name="password" id="password" class="signup_password" required>
+                <label for="password">Password</label>
+            </div>
+
+            <div class="agree_continue">
+                <button type="submit">Agree and Continue</button>
+            </div>
+        </form>
+
+     
+
+        <div class="last_section">
+            <input type="checkbox" name="acct_already" id="acct_already">
+            <p>Already have an account?</p>
+            <a href="./signin.html">sign in</a>
+
+        </div>
+         
+    </main>
+</body>
+</html>
